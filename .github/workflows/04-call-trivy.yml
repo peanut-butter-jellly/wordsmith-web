@@ -1,0 +1,9 @@
+name: Call Trivy
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  scan:
+    name: Scan
+    uses: peanut-butter-jellly/actions/.github/workflows/01-reusable-trivy.yml@course-day-2
