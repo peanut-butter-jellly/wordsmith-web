@@ -6,6 +6,6 @@ on:
 jobs:
   scan:
     name: Scan
-    uses: peanut-butter-jellly/actions/.github/workflows/01-reusable-trivy.yml@course-day-2
+    uses: peanut-butter-jellly/actions/.github/workflows/01-reusable-trivy.yml@main
     with:
       image: "ghcr.io/peanut-butter-jellly/wordsmith-web:latest"
