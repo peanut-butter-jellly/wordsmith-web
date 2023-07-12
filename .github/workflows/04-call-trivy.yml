@@ -1,0 +1,11 @@
+name: Call Trivy
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  scan:
+    name: Scan
+    uses: peanut-butter-jellly/actions/.github/workflows/01-reusable-trivy.yml@main
+    with:
+      image: "ghcr.io/peanut-butter-jellly/wordsmith-web:latest"
